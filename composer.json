@@ -1,0 +1,33 @@
+{
+  "authors": [
+    {
+      "name": "Jeroen el Hahaoui",
+      "email": "jeroen@micro-it.nl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "vimeo/psalm": "^5.11",
+    "friendsofphp/php-cs-fixer": "^3.16",
+    "phpmd/phpmd" : "@stable",
+    "phpstan/phpstan": "^1.10"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  },
+  "scripts": {
+    "psalm": "./vendor/bin/psalm --no-cache",
+    "phpstan": "./vendor/bin/phpstan analyse --configuration phpstan.neon",
+    "php-cs-fixer": "./vendor/bin/php-cs-fixer fix --config=php-cs-fixer.php",
+    "phpmd": "./vendor/bin/phpmd ./src text ./phpmd.xml"
+  }
+}
