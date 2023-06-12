@@ -1,4 +1,5 @@
 /vendor
 /.idea
 
+phanalist
 .php-cs-fixer.cache

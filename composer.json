@@ -13,6 +13,9 @@
   "require": {
     "php": "^8.2"
   },
+  "extra": {
+    "phanalist": "https://github.com/denzyldick/phanalist"
+  },
   "require-dev": {
     "vimeo/psalm": "^5.11",
     "friendsofphp/php-cs-fixer": "^3.16",
@@ -28,6 +31,7 @@
     "psalm": "./vendor/bin/psalm --no-cache",
     "phpstan": "./vendor/bin/phpstan analyse --configuration phpstan.neon",
     "php-cs-fixer": "./vendor/bin/php-cs-fixer fix --config=php-cs-fixer.php",
-    "phpmd": "./vendor/bin/phpmd ./src text ./phpmd.xml"
+    "phpmd": "./vendor/bin/phpmd ./src text ./phpmd.xml",
+    "phanalist": "./phanalist"
   }
 }
