@@ -20,7 +20,8 @@
     "vimeo/psalm": "^5.11",
     "friendsofphp/php-cs-fixer": "^3.16",
     "phpmd/phpmd" : "@stable",
-    "phpstan/phpstan": "^1.10"
+    "phpstan/phpstan": "^1.10",
+    "denzyl/phanalist":"^0.1.0"
   },
   "config": {
     "allow-plugins": {
@@ -32,6 +33,6 @@
     "phpstan": "./vendor/bin/phpstan analyse --configuration phpstan.neon",
     "php-cs-fixer": "./vendor/bin/php-cs-fixer fix --config=php-cs-fixer.php",
     "phpmd": "./vendor/bin/phpmd ./src text ./phpmd.xml",
-    "phanalist": "./phanalist"
+    "phanalist": "./vendor/bin/phanalist"
   }
 }
